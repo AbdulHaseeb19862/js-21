@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+        padding: 50px;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        background-color: lightblue;
+    }
+
+    .inner {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: lightgray;
+    }
+</style>
+</head>
+<body>
+  
+  <p>Chapter-47: Events: Mouse</p>
+  <div class="container" onmouseleave="alert('Mouse left the element');"
+  >
+  Hover over me and move the mouse out!
+  <div class="inner">
+      Inner element
+  </div>
+</div>
+
+<!-- onmouseout="alert('Mouse left the element or a child element');" -->
+<!--  -->
+</body>
+</html>

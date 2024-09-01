@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Inline Elements:
+  Inline elements are elements that do not start on a new line and only take up as much width as necessary. Examples include <span>, <a>, <strong>, and <em>.
+  By default, most inline elements are not focusable, meaning they do not receive keyboard focus when you tab through elements on a webpage.
+  Focus in Inline Elements:
+  Focusable Elements: Some inline elements, like <a> (anchor links), are focusable by default because they are interactive. When you click on a link or navigate to it using the keyboard (like using the Tab key), it gains focus.
+  Non-Focusable Inline Elements: Elements like <span>, <strong>, and <em> are not focusable by default because they are typically used for styling or text emphasis, not for interaction.
+  Making Non-Focusable Inline Elements Focusable:
+  To make an inline element like <span> or <strong> focusable, you can add the tabindex attribute to it. The tabindex attribute makes an element focusable and determines its order in the tabbing sequence. -->
+
+
+
+
+  <p>Chapter-48: Events: fields</p>
+
+  <!-- Email: <input type="text" onFocus="style.backgroundColor='red'"> <br>
+  Password: <input type="text" onFocus="style.backgroundColor='red'"> -->
+
+
+
+  <!-- Email: <input type="text" onFocus="style.backgroundColor='red'" onBlur="style.backgroundColor='white'"> -->
+
+  Email: <input type="text" onFocus="makeFieldRed(this)" onBlur="makeFieldWhite(this)">
+  <br><br>
+  <span onfocus="console.log('Focused')" onblur="console.log('Blurred')">Hover over me</span>
+
+<br><br>
+<span tabindex="0" onfocus="console.log('Focused')" onblur="console.log('Blurred')">Click or Tab here</span>
+
+  <script>
+    function makeFieldRed(element){  // any name can give you as parameter
+      element.style.backgroundColor="red"
+    }
+    function makeFieldWhite(element){
+      element.style.backgroundColor="white"
+
+    }
+  </script>
+</body>
+</html>
